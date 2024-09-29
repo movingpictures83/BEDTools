@@ -1,0 +1,2 @@
+A	pipelines/BEDTools/input/A.bed
+B	pipelines/BEDTools/input/B.bed

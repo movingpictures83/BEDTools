@@ -1,0 +1,2 @@
+window	pipelines/BEDTools/output/window.txt
+cols	2,3,7,8

@@ -1,0 +1,3 @@
+bedfile	pipelines/BEDTools/input/A.bed
+genome	pipelines/BEDTools/input/human.hg19.genome
+bases	5

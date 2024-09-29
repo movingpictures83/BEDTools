@@ -1,0 +1,2 @@
+bedfile	pipelines/BEDTools/input/A.bed
+genome	pipelines/BEDTools/input/mouse.mm9.genome

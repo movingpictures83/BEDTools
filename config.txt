@@ -1,0 +1,30 @@
+Prefix pipelines/BEDTools/
+Plugin BAM2BED inputfile input/example.bam outputfile output/output.bed
+Plugin BED2IGV inputfile output/output.bed outputfile output/output.igv
+Plugin BED122BED6 inputfile input/A.bed outputfile output/A.bed12.bed
+Plugin LinksBED inputfile input/B.bed outputfile output/links.html
+Plugin MergeBED inputfile input/B.bed outputfile output/merged.bed
+Plugin SortBED inputfile output/merged.bed outputfile output/sorted.bed
+
+#######################################################################
+# ALIGN
+#######################################################################
+Plugin BED2BAM inputfile parameters/parameters.align.txt outputfile output/A.mouse.bam
+Plugin ComplementBED inputfile parameters/parameters.align.txt outputfile output/complement.txt
+
+
+#######################################################################
+# PAIRWISE
+#######################################################################
+Plugin ClosestBED inputfile parameters/parameters.pair.txt outputfile output/closest.txt
+Plugin CoverageBED inputfile parameters/parameters.pair.txt outputfile output/coverage.txt
+Plugin IntersectBED inputfile parameters/parameters.pair.txt outputfile output/intersect.txt
+Plugin WindowBED inputfile parameters/parameters.pair.txt outputfile output/window.txt
+Plugin SubtractBED inputfile parameters/parameters.pair.txt outputfile output/subtract.txt
+
+#######################################################################
+# MISC
+#######################################################################
+Plugin MaskFASTAFromBED inputfile parameters/parameters.mask.txt outputfile output/masked.fasta
+Plugin Overlap inputfile parameters/parameters.overlap.txt outputfile output/overlap.txt
+Plugin SlopBED inputfile parameters/parameters.slop.txt outputfile output/slop.txt

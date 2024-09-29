@@ -1,0 +1,2 @@
+fastafile	pipelines/BEDTools/input/sample.fasta
+bedfile	pipelines/BEDTools/input/B.bed
